@@ -1,0 +1,29 @@
+$baseFontColor:		#333;
+$baseLinkColor:		#59493f;
+$baseThemeColor:	#59493f;
+
+$sans-serif:		Helvetica, Verdana, "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック",sans-serif;
+$serif:				"Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho","MS 明朝", serif;
+$mono: Consolas, "Liberation Mono", Osaka-mono, "MS Gothic", monospace;
+
+$baseSize:			16px;
+$baseWidth:			64rem;			// 1024px
+$baseborderradius:	0.5rem;			// 8px
+
+$basebgcolor:		#013201;
+$basebordercolor:	#f1f1f1;
+$yellow: 			#FFFC5F;
+
+$white:				#fff;
+$colordarkgray:		#7a7a7a;
+$colorgray: 		#b2b2b2;
+$colorlightgray:	#d8d8d8;
+$colorlightergray:	#f6f6f6;
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

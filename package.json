@@ -1,0 +1,14 @@
+{
+  "name": "TNWC-gulp",
+  "version": "1.0.0",
+  "description": "package TNWC 2015",
+  "main": "gulpfile.js",
+  "author": "YH",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-pleeease": "^1.2.0",
+    "gulp-plumber": "^1.0.0",
+    "gulp-ruby-sass": "^1.0.1"
+  }
+}

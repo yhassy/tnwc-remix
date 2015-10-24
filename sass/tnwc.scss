@@ -1,0 +1,366 @@
+@charset "UTF-8";
+@import "variables","normalize";
+
+body{
+	background: $white;
+	border-top: solid 0.4rem $basebgcolor;
+	color: $baseFontColor;
+	font-family: $sans-serif;
+	font-size: $baseSize;
+	line-height: 1.8;
+}
+
+a{
+
+}
+
+img{
+	display: block;
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+/* Today */
+#today{
+	background: $basebgcolor;
+	color: $white;
+	display: none;
+	font-size: 1rem;
+	padding: 0.5rem 0;
+	text-align: center;
+	a{
+		color: $yellow;
+		font-weight: bold;
+	}
+}
+
+/* Basic Layout */
+header{
+	box-shadow: 0 2px 10px $colorlightgray;
+    margin-bottom: 2rem;
+	padding: 1.4rem 0;
+	position: relative;
+	img{
+		border: none;
+		height: 5rem;
+		margin: 0 auto;
+	}
+}
+.container{
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	padding: 0;
+}
+main[role="main"]{
+	display: flex;
+	flex-direction: column;
+}
+aside[role="complementary"]{
+	box-sizing: border-box;
+	padding: 0 1rem;
+}
+footer {
+	background-color: $basebgcolor;
+    margin-top: 3em;
+    padding: 1rem 0;
+    p{
+    	color: $white;
+    	text-align: center;
+    	width: 100%;
+    }
+    a{
+    	color: $white;
+    }
+}
+
+/* Social -- from Official Site */
+.rrssb-buttons {
+	@include clearfix;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin: 0 auto 2em;
+    width: 60%;
+    padding: 0;
+    li{
+    	box-sizing: border-box;
+	    float: left;
+	    height: 100%;
+	    width: 33.3%;
+	    line-height: 1;
+	    list-style: none;
+	    margin: 0;
+	    padding: 0 2px;
+    }
+    a{
+    	background-color: $colorlightgray;
+	    border-radius: 2px;
+	    box-sizing: border-box;
+	    display: block;
+	    font-size: 87.5%;
+	    -moz-osx-font-smoothing: grayscale;
+	    -webkit-font-smoothing: antialiased;
+	    height: 100%;
+	    padding: 5px 5px 6px;
+	    position: relative;
+	    text-align: center;
+	    text-decoration: none;
+	    width: 100%;
+	    .rrssb-icon {
+		    display: block;
+		    left: 5px;
+		    padding-top: 4px;
+		    position: absolute;
+		    top: 0;
+		    width: 17px;
+		    svg{
+		    	fill: $white;
+				height: 17px;
+				width: 17px;
+		    }
+		}
+		.rrssb-text {
+			color: $white;
+		}
+	}
+    .rrssb-facebook a {
+    	background-color: #306199;
+    }
+    .rrssb-twitter a {
+    	background-color: #006EFE;
+	}
+	.rrssb-googleplus a {
+    	background-color: #D64136;
+	}
+}
+
+/* Button -- from Bootstrap */
+.btn {
+	box-sizing: border-box;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 0.4rem 0.8rem;
+    font-size: 1rem;
+    line-height: 1.42857;
+    border-radius: 0.4rem;
+    user-select: none;
+}
+.btn-block {
+    display: block;
+    padding: 1rem 0;
+    width: 100%;
+}
+.btn-default {
+    background-color: $basebgcolor;
+    border-color: $basebgcolor;
+    color: $white;
+}
+
+/* Main -- from Official Site */
+main[role="main"]{
+	h1{
+		margin: 0 0 1rem;
+	}
+	& > section{
+		margin: 0 0 2rem;
+	}
+}
+section{
+	& > h2{
+		border-bottom: 2px solid $basebgcolor;
+		font-size: 1.4rem;
+		margin: 0 0 1rem 0;
+	}
+}
+
+.session {
+    border: 1px solid $colorlightgray;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    margin-top: 2rem;
+    padding: 1rem;
+    h2{
+    	border: none;
+    	font-size: 2rem;
+    	line-height: 1;
+    	margin-top: 0;
+	    margin-bottom: 1rem;
+	    position: relative;
+    }
+    h3{
+    	border-bottom-style: solid;
+		padding-bottom: 0.25em;
+    }
+    h4{
+    	border-bottom: 1px dashed #ccc;
+		margin-top: 1.5em;
+		padding-bottom: 0.25em;
+    }
+    .session-no {
+	    background-color: #eee;
+	    border-radius: 1.5em;
+	    display: block;
+	    font-size: 0.8rem;
+	    line-height: 1;
+	    margin-bottom: 1rem;
+	    padding: 0.5rem 1rem;
+	    text-align: center;
+	}
+	.sub_title {
+	    color: #555;
+	    display: block;
+	    font-size: 1.4rem;
+	    margin-top: 0.5rem;
+	    &:before, 
+	    &:after{
+	    	content: "〜";
+	    }
+	}
+}
+.session-photo{
+
+}
+.session-profile{
+
+}
+
+/* Reorder, Special Content */
+.fromsendai{
+	border: 4px solid $basebgcolor;
+	display: none;
+	margin: 0 0 1rem;
+	padding: 1rem;
+}
+.welcome{
+	display: none;
+}
+.sendai.eventday, 
+.venue.eventday{
+	.entry, 
+	.btn.btn-default.btn-block, 
+	.sns-buttons{	display:none;	}
+	.rrssb-buttons{ order:1;	}
+	.schedule{		order: 2; 	}
+	.disclaimer{	order: 3;	}
+	.sessions{		order: 4;	}
+	.description{	order: 5;	}
+	.introduction{	order: 6;	}
+	.information{	order: 7;	}
+	.contact{		order: 8;	}
+}
+.sendai.eventday{
+	.fromsendai{
+		display: block;
+		p{
+			margin: 0;
+		}
+	}
+}
+.venue.eventday{
+	.welcome{
+		display: block;
+	}
+}
+
+/* Comlementary */
+aside[role="complementary"]{
+	h2{
+		border-bottom: 1px solid $colorlightgray;
+		font-size: 1.414em;
+		line-height: 1;
+		margin: 0 0 0.5rem;
+		padding-bottom: 0.25em;
+	}
+	section{
+		margin: 0 0 2rem;
+	}
+}
+.list-banner{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	img{
+		border: 1px solid $colorlightgray;
+		margin: 0 auto 0.25rem;
+	}
+	li{
+		text-align: center;
+		margin: 0 0 1rem;
+	}
+}
+
+/* Table -- from Bootstrap */
+table{
+	border-collapse: collapse;
+    border-spacing: 0;
+}
+td, th {
+    padding: 0;
+    text-align: left;
+}
+caption{
+	padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: #737373;
+    text-align: left;
+}
+.table{
+	max-width: 100%;
+    margin-bottom: 2rem;
+}
+.table-bordered>thead>tr>th, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>th {
+    background-color: #eee;
+}
+.table-bordered>thead>tr>th, .table-bordered>thead>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tbody>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>tfoot>tr>td {
+    border: 1px solid $colorlightgray;
+}
+.table>thead>tr>th, .table>thead>tr>td, .table>tbody>tr>th, .table>tbody>tr>td, .table>tfoot>tr>th, .table>tfoot>tr>td {
+    padding: 8px;
+    line-height: 1.42857;
+    vertical-align: top;
+    border-top: 1px solid $colorlightgray;
+    font-weight: normal;
+}
+
+@media all and (min-width: 680px) {
+	.container{
+		align-content: flex-start;
+		align-items: flex-start;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		max-width: $baseWidth;
+	}
+	main[role="main"]{
+		flex-grow: 1;
+		flex-shrink: 0;
+		flex-basis: 16rem;
+	}
+	aside[role="complementary"]{
+		padding: 0 0 0 2rem;
+		width: 16rem;
+	}
+	/* Table */
+	.table-bordered>thead>tr>th, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>th {
+    	white-space: nowrap;
+    }
+    /* Session */
+    .session-photo{
+    	float: left;
+    	margin: 0;
+    	width: 12rem;
+	}
+	.session-profile{
+		margin-left: 14rem;
+	}
+}
